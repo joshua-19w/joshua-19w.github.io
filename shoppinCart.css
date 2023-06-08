@@ -1,0 +1,278 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    width: 90%;
+    background-color: white;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+
+
+}
+header{
+    margin: 10px;
+    padding: 10px;
+    height: 50px;
+    border: 2px solid orange;
+    box-shadow: 2px 3px 3px orange;
+    position: fixed;
+    top: 0;
+    border-radius: 8px; 
+    width: 90%;
+    justify-self: center;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+header .fa-bars{
+    font-size: 2rem;
+}
+
+header .fa-bars:hover{
+    color: orange;
+}
+
+header .fa-cart-shopping{
+    font-size: 2rem;
+}
+
+header .fa-cart-shopping:hover{
+    color:orange
+}
+
+section{
+    width: 100%;
+    height: 900px;
+    display: grid;
+    grid-template-columns: 100px 800px 500px;
+    grid-gap: 20px;
+    margin-top: 100px;
+}
+
+section div.sidebar1{
+    background-color: orange;
+    width: 200px;
+    height: 550px;
+    position: fixed;
+    left: 0;
+    overflow:scroll ;
+    display: none;
+    transition: all 0.5s ease;
+}
+section div.sidebar1 ul{
+    height: 500px;
+    background-color: grey;
+    border: 1px solid black;
+    position: fixed;
+    scroll-behavior: smooth;
+}
+
+section div.sidebar1 ul>li{
+    padding: 10px 0px 10px 10px;
+    
+}
+section div.sidebar1 ul>li:hover{
+    background-color: white;
+    border-top: 1px solid black;
+    
+}
+
+section div.sidebar1 ul>li a{
+    border-bottom: 2px solid orange;
+    width: 100px;
+    color: black;
+    font-size: 1.5rem;
+}
+
+section div.content{
+    background-color: white;
+    width: 1300px;
+    height:100vh ;
+    margin-left: 180px;
+}
+
+.description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
+section div.sidebar2{
+    background-color: orange;
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    right: 0;
+    overflow-y: scroll;
+    transition: all 0.5s ease;
+    display: none;
+}
+
+.mycart{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+hr{
+    height: 2px;
+    background-color: black;
+
+}
+.total_price{
+    margin-top: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.fa-x{
+    padding: 10px;
+}
+
+/*footer{
+    background-color: orange;
+    height: 100px;
+    width: 90%;
+    position: fixed;
+    bottom: 0;
+    margin-left: 180px;
+    
+}*/
+
+/*#foods{
+    
+    display: none;
+
+}*/
+
+#beauty_products{
+    display: none;
+}
+
+#health_products{
+    display: none;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2:hover{
+    color: orange;
+}
+
+.food_Images{
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(3, 302px);
+    grid-template-rows: 350px;
+    justify-content: center;
+    grid-gap: 20px;
+    margin-top: 20px;
+
+}
+
+
+div.image{
+    background-color: rgb(204, 197, 197);
+    border: 1px solid orange;
+    border-radius: 8px;
+}
+div.image:hover{
+    padding: 10px 15px;
+}
+div.image img{
+    height: 250px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+div.image img:hover{
+    padding: 10px ;
+    border: 1px solid orange;
+}
+.beauty_products_image{
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(3, 302px);
+    grid-template-rows: 350px;
+    justify-content: center;
+    grid-gap: 20px;
+    margin-top: 20px;
+
+}
+
+.health_products_image{
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(3, 302px);
+    grid-template-rows: 350px;
+    justify-content: center;
+    grid-gap: 20px;
+    margin-top: 20px;
+
+}
+
+button{
+    background-color: orange;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    color: white;
+    padding: 5px;
+    font-size: 1rem;box-shadow: 2px 2px 2px black;
+
+}
+button:hover{
+    padding: 10px;
+}
+footer{
+    background-color: orange;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    margin-left: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+footer a{
+    color: black;
+    font-size: 0.8rem;
+    margin: 10px;
+    letter-spacing: 1px;
+    
+}
+footer p{
+    font-size: 1.3rem;
+}
+.fa-brands{
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width:393px){
+    
+    body{
+        background-color: red;
+    }
+
+    header{
+        width: auto;
+        font-size: 1rem;
+    }
+    
+}
